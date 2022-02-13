@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  sdk:
+    image: sdk:0.0.1
+    restart: always
+    volumes:
+      - ~Develop/personal/machine-learning/deeplearning-chatbot-app:/app:consistent
+    environment:
+      scratch_dir: /data
